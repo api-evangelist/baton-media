@@ -1,7 +1,16 @@
 aid: baton-media
 name: Baton Media
-description: Baton Media is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Baton is a music collaboration and IP-management platform for unreleased
+  music, built by Baton Media Inc. (New York, Techstars '23). It gives musicians,
+  producers, managers, and talent scouts tools to securely upload, organize, version,
+  and share unreleased tracks, beat packs, and sample libraries across iOS and web.
+  A proprietary media player shows creators exactly who is listening to their material,
+  while collaboration spaces (private, invite-only, or public), an in-app audio studio
+  (looping, pitch shifting, EQ, effects, sample pairing), and a creator-to-fan marketplace
+  support discovery, placement opportunities, and monetization. Baton is building
+  collaboration protocols to track IP rights and automate crediting and compensation
+  across the creator economy. As of this enrichment the company publishes a consumer
+  product (iOS app + web) with no public API, developer portal, or documentation.
 url: https://raw.githubusercontent.com/api-evangelist/baton-media/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,30 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Music
+- Music Collaboration
+- Creator Economy
+- Intellectual Property
+- Marketplace
+- Audio
+- Media
+image: https://baton.media/images/baton_logo_white.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baton-media-domain-security.yml
 - type: Website
   url: https://baton.media/
+- type: SignUp
+  url: https://baton.media/signup
+- type: Login
+  url: https://baton.media/login
+- type: Support
+  url: https://baton.media/contact
+- type: TermsOfService
+  url: https://baton.media/terms-of-service
+- type: PrivacyPolicy
+  url: https://baton.media/privacy-policy
+- type: MobileApp
+  name: Baton for iOS
+  url: https://apps.apple.com/app/apple-store/id6476163926
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
